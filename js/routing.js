@@ -1,5 +1,5 @@
 /** @format */
-
+// Routing between the pages is performed here 
 const blogButton = document.getElementById("blog");
 const homeButton = document.getElementById("home");
 

@@ -10,12 +10,29 @@ document
       alert("Failed to Donate please enter amount!");
       return;
     }
-
+    
+    const balance = getTextFieldValueById("accountBalance");
+    if ((isNaN(balance)) || (balance < 0)){
+      alert("You're Currently out of Balance");
+      return;
+    }
+    else{
     const donationOfFeni = getTextFieldValueById("donateMoneyNoakhaliFlood");
 
     const newFeniDonation = donationOfFeni + donateMoney;
     
+    
+    const newBalance = balance - donateMoney;
+    if ((isNaN(newBalance)) || (newBalance < 0)){
+      alert("Not Enough Money in Balace to donate Please enter new amount.");
+      return;
+    }
+    else{
+      document.getElementById("accountBalance").innerText = newBalance; 
+      
     document.getElementById("donateMoneyNoakhaliFlood").innerText = newFeniDonation;
+    }
+  }
   });
   // Feni Donation Function
 document
@@ -28,12 +45,25 @@ document
       alert("Failed to Donate please enter amount!");
       return;
     }
-
+    const balance = getTextFieldValueById("accountBalance");
+    if ((isNaN(balance)) || (balance < 0)){
+      alert("You're Currently out of Balance");
+      return;
+    }
+     
     const donationOfFeni = getTextFieldValueById("donateMoneyFeniFlood");
 
     const newFeniDonation = donationOfFeni + donateMoney;
     
-    document.getElementById("donateMoneyFeniFlood").innerText = newFeniDonation;
+    const newBalance = balance - donateMoney;
+    if ((isNaN(newBalance)) || (newBalance < 0)){
+      alert("Not Enough Money in Balace to donate Please enter new amount.");
+      return;
+    }
+    else{
+      document.getElementById("accountBalance").innerText = newBalance; 
+      document.getElementById("donateMoneyFeniFlood").innerText = newFeniDonation;
+    }
   });
   // Quota Donation Function
 document
@@ -47,9 +77,24 @@ document
       return;
     }
 
+      
+    const balance = getTextFieldValueById("accountBalance");
+    if ((isNaN(balance)) || (balance < 0)){
+      alert("You're Currently out of Balance");
+      return;
+    }
+
     const donationOfFeni = getTextFieldValueById("donationForQuota");
 
     const newFeniDonation = donationOfFeni + donateMoney;
-    
-    document.getElementById("donationForQuota").innerText = newFeniDonation;
+   
+    const newBalance = balance - donateMoney;
+    if ((isNaN(newBalance)) || (newBalance < 0)){
+      alert("Not Enough Money in Balace to donate Please enter new amount.");
+      return;
+    }
+    else{
+      document.getElementById("accountBalance").innerText = newBalance; 
+      document.getElementById("donationForQuota").innerText = newFeniDonation;
+    }
   });

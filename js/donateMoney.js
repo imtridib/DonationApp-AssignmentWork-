@@ -1,5 +1,5 @@
 /** @format */
-
+// Noakhali DOnation Function
 document
   .getElementById("btnMoney-Noakhali")
   .addEventListener("click", function (event) {
@@ -17,6 +17,7 @@ document
     
     document.getElementById("donateMoneyNoakhaliFlood").innerText = newFeniDonation;
   });
+  // Feni Donation Function
 document
   .getElementById("btnMoney-Feni")
   .addEventListener("click", function (event) {
@@ -34,6 +35,7 @@ document
     
     document.getElementById("donateMoneyFeniFlood").innerText = newFeniDonation;
   });
+  // Quota Donation Function
 document
   .getElementById("btnMoney-Quota")
   .addEventListener("click", function (event) {

@@ -7,7 +7,7 @@ document
     const donateMoney = getInputFieldValueById("donateNoakhali");
 
     if (isNaN(donateMoney)) {
-      alert("Failed to cash out");
+      alert("Failed to Donate please enter amount!");
       return;
     }
 
@@ -25,7 +25,7 @@ document
     const donateMoney = getInputFieldValueById("donateFeni");
     
     if (isNaN(donateMoney)) {
-      alert("Failed to cash out");
+      alert("Failed to Donate please enter amount!");
       return;
     }
 

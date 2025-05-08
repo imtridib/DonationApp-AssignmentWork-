@@ -1,5 +1,5 @@
 /** @format */
-// Routing between the pages is performed here 
+// Routing between the pages is performed here
 const blogButton = document.getElementById("blog");
 const homeButton = document.getElementById("home");
 
@@ -14,3 +14,11 @@ if (homeButton) {
     window.location.href = "/index.html";
   });
 }
+
+document.getElementById("donate").addEventListener("click", function () {
+  showSectionById("donation");
+});
+
+document.getElementById("donate-history").addEventListener("click", function () {
+  showSectionById("donation-history");
+});

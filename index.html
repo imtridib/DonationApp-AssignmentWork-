@@ -62,20 +62,20 @@
         <div
           class="pt-6 pb-6 flex justify-center gap-3 items-center bg-gray-500 bg-opacity-25 backdrop-blur-md"
         >
-          <button
+          <button id="donate"
             class="px-8 py-3 bg-slate-300 text-black hover:text-white font-medium rounded-lg shadow-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none transition-transform transform active:scale-95"
           >
-            Blog
+            Donation
           </button>
-          <button
+          <button id="donate-history"
             class="px-8 py-3 bg-blue-500 text-white font-medium rounded-lg shadow-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none transition-transform transform active:scale-95"
           >
-            Blog
+            History
           </button>
         </div>
       </div>
     </main>
-    <section class="flex flex-col gap-6 mb-10 mt-6">
+    <section id="donation" class="flex flex-col gap-6 mb-10 mt-6">
       <div class="flex justify-center">
         <div class="hero rounded-lg max-w-5xl bg-base-200 min-h-60">
           <div class="hero-content p-4 flex-col lg:flex-row lg:p-0">
@@ -209,8 +209,13 @@
       </div>
     </section>
 
-    <!-- blog page starting -->
-     
+    <!-- Donation History -->
+    <div id="donation-history" class="hidden">
+      <h2 class="text-3xl text-center">Transaction History</h2>
+      <div id="transaction-container" class="space-y-3"></div>
+    </div>
+
+    <!-- blog page starting -->     
       <section class="hidden pt-24 flex-col items-center">
       <div class="collapse mb-1 px-2 max-w-7xl collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" checked="checked" />

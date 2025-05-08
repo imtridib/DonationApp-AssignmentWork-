@@ -19,7 +19,7 @@ document
       const donationOfFeni = getTextFieldValueById("donateMoneyNoakhaliFlood");
 
       const newFeniDonation = donationOfFeni + donateMoney;
-      // Main Balance amount 
+      // Main Balance amount
       const newBalance = balance - donateMoney;
       if (isNaN(newBalance) || newBalance < 0) {
         alert("Not Enough Money in Balace to donate Please enter new amount.");
@@ -29,6 +29,14 @@ document
 
         document.getElementById("donateMoneyNoakhaliFlood").innerText =
           newFeniDonation;
+
+        const div = document.createElement("div");
+        div.classList.add("bg-yellow-300");
+        div.innerHTML = `
+      <h4 class='text-2xl font-bold'>Donate Money</h4>
+      <p>${donateMoney} taka donated, New Balance ${newBalance}</p>`;
+
+        document.getElementById("donation-history").appendChild(div);
       }
     }
   });

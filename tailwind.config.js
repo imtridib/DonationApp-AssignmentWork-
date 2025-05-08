@@ -1,5 +1,5 @@
 /** @format */
-
+// tailwind codes
 module.exports = {
   //...
   daisyui: {

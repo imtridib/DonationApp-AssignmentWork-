@@ -8,7 +8,6 @@ function getInputFieldValueById(id) {
   return inputNumber;
 }
 
-
 function getTextFieldValueById(id) {
   const textValue = document.getElementById(id).innerText;
   const textNumber = parseFloat(textValue);
@@ -18,7 +17,32 @@ function getTextFieldValueById(id) {
 
 function showSectionById(id) {
   // hide all the sections
-  document.getElementById("donation").classList.add("hidden");
-  // show the section with the provide id as parameter
-  document.getElementById(id).classList.remove("hidden");
+  if (id == "blog") {
+    document.getElementById("home").classList.remove("hidden");
+    document.getElementById("blog-post").classList.remove("hidden");
+    document.getElementById("functionalKey").classList.add("hidden");
+    document.getElementById("donation").classList.add("hidden");
+    // show the section with the provide id as parameter
+    document.getElementById(id).classList.add("hidden");
+  } else {
+    document.getElementById("blog").classList.remove("hidden");
+    document.getElementById("blog-post").classList.add("hidden");
+    document.getElementById("functionalKey").classList.remove("hidden");
+    document.getElementById("donation").classList.remove("hidden");
+    // show the section with the provide id as parameter
+    document.getElementById(id).classList.add("hidden");
+  }
+
+  if (id == "donation") {
+    // hide all the sections
+    document.getElementById("donation-history").classList.add("hidden");
+    // show the section with the provide id as parameter
+    document.getElementById(id).classList.remove("hidden");
+  }
+  if (id == "donation-history") {
+    // hide all the sections
+    document.getElementById("donation").classList.add("hidden");
+    // show the section with the provide id as parameter
+    document.getElementById(id).classList.remove("hidden");
+  }
 }

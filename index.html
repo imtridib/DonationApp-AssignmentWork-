@@ -25,10 +25,16 @@
             class="navbar-start flex justify-center w-full sm:w-auto sm:pl-5 md:pl-10 mb-4 sm:mb-0"
           >
             <button
-            id="blog"
+              id="blog"
               class="px-6 sm:px-8 py-2 sm:py-3 bg-blue-500 text-white font-medium rounded-lg shadow-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none transition-transform transform active:scale-95"
             >
               Blog
+            </button>
+            <button
+              id="home"
+              class="hidden sm:px-8 py-2 sm:py-3 bg-blue-500 text-white font-medium rounded-lg shadow-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none transition-transform transform active:scale-95"
+            >
+              Home
             </button>
           </div>
           <!-- Navbar Center -->
@@ -54,21 +60,26 @@
                 src="images/coin.png"
                 alt="coin image"
               />
-              <p id="accountBalance" class="text-lg sm:text-xl font-medium">9400</p>
+              <p id="accountBalance" class="text-lg sm:text-xl font-medium">
+                9400
+              </p>
             </div>
           </div>
         </div>
 
         <div
+          id="functionalKey"
           class="pt-6 pb-6 flex justify-center gap-3 items-center bg-gray-500 bg-opacity-25 backdrop-blur-md"
         >
-          <button id="donate"
+          <button
+            id="donate"
             class="px-8 py-3 bg-slate-300 text-black hover:text-white font-medium rounded-lg shadow-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none transition-transform transform active:scale-95"
           >
             Donation
           </button>
-          <button id="donate-history"
-            class="px-8 py-3 bg-blue-500 text-white font-medium rounded-lg shadow-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none transition-transform transform active:scale-95"
+          <button
+            id="donate-history"
+            class="px-8 py-3 bg-blue-500 text-white font-medium rounded-lg shadow-md  hover:text-black  hover:bg-slate-300 active:bg-slate-300 focus:outline-none transition-transform transform active:scale-95"
           >
             History
           </button>
@@ -91,7 +102,7 @@
               >
                 <img src="images/coin.png" alt="coin" />
                 <!-- For Noakhali Donation -->
-                <div  id="donateMoneyNoakhaliFlood">1400</div>
+                <div id="donateMoneyNoakhaliFlood">1400</div>
                 <a>Blog</a>
               </div>
               <h1 class="pt-4 text-3xl sm:text-3xl font-bold">
@@ -106,12 +117,16 @@
               <div
                 class="flex flex-col items-center lg:items-start w-full gap-2"
               >
-                <input id="donateNoakhali"
+                <input
+                  id="donateNoakhali"
                   class="w-full lg:w-80 h-10 bg-blue-200 px-2 rounded-md"
                   type="text"
                   placeholder="Your Amount"
                 />
-                <button id="btnMoney-Noakhali" class="btn w-full lg:w-80 btn-primary">
+                <button
+                  id="btnMoney-Noakhali"
+                  class="btn w-full lg:w-80 btn-primary"
+                >
                   <p class="text-lg pb-1">Donate</p>
                 </button>
               </div>
@@ -149,12 +164,16 @@
               <div
                 class="flex flex-col items-center lg:items-start w-full gap-2"
               >
-                <input id="donateFeni"
+                <input
+                  id="donateFeni"
                   class="w-full lg:w-80 h-10 bg-blue-200 px-2 rounded-md"
                   type="text"
                   placeholder="Your Amount"
                 />
-                <button id="btnMoney-Feni" class="btn w-full lg:w-80 btn-primary">
+                <button
+                  id="btnMoney-Feni"
+                  class="btn w-full lg:w-80 btn-primary"
+                >
                   <p class="text-lg pb-1">Donate</p>
                 </button>
               </div>
@@ -177,7 +196,7 @@
               >
                 <img src="images/coin.png" alt="coin" />
                 <!-- For Quota Donation -->
-                 <!-- Code -->
+                <!-- Code -->
                 <p id="donationForQuota">1400</p>
                 <a>Blog</a>
               </div>
@@ -193,13 +212,17 @@
               <div
                 class="flex flex-col items-center lg:items-start w-full gap-2"
               >
-              <!-- Donate Quota Placeholder -->
-                <input id="donateQuota"
+                <!-- Donate Quota Placeholder -->
+                <input
+                  id="donateQuota"
                   class="w-full lg:w-80 h-10 bg-blue-200 px-2 rounded-md"
                   type="text"
                   placeholder="Your Amount"
                 />
-                <button id="btnMoney-Quota" class="btn w-full lg:w-80 btn-primary">
+                <button
+                  id="btnMoney-Quota"
+                  class="btn w-full lg:w-80 btn-primary"
+                >
                   <p class="text-lg pb-1">Donate</p>
                 </button>
               </div>
@@ -214,10 +237,14 @@
       <h2 class="text-3xl text-center">Transaction History</h2>
       <div id="transaction-container" class="space-y-3"></div>
     </div>
-
-    <!-- blog page starting -->     
-      <section class="hidden pt-24 flex-col items-center">
-      <div class="collapse mb-1 px-2 max-w-7xl collapse-arrow bg-base-200">
+    <!-- blog page starting -->
+    <section
+      id="blog-post"
+      class="pt-24 flex flex-col items-center justify-center w-full"
+    >
+      <div
+        class="collapse mb-1 px-2 w-full max-w-7xl collapse-arrow bg-base-200"
+      >
         <input type="radio" name="my-accordion-2" checked="checked" />
         <div class="collapse-title text-xl font-medium">
           Click to open this one and close others
@@ -226,7 +253,9 @@
           <p>hello</p>
         </div>
       </div>
-      <div class="collapse mb-1 px-2 max-w-7xl collapse-arrow bg-base-200">
+      <div
+        class="collapse mb-1 px-2 w-full max-w-7xl collapse-arrow bg-base-200"
+      >
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
           Click to open this one and close others
@@ -235,7 +264,9 @@
           <p>hello</p>
         </div>
       </div>
-      <div class="collapse mb-1 px-2 max-w-7xl collapse-arrow bg-base-200">
+      <div
+        class="collapse mb-1 px-2 w-full max-w-7xl collapse-arrow bg-base-200"
+      >
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
           Click to open this one and close others
@@ -244,7 +275,9 @@
           <p>hello</p>
         </div>
       </div>
-      <div class="collapse mb-1 px-2 max-w-7xl collapse-arrow bg-base-200">
+      <div
+        class="collapse mb-1 px-2 w-full max-w-7xl collapse-arrow bg-base-200"
+      >
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
           Click to open this one and close others
@@ -254,6 +287,7 @@
         </div>
       </div>
     </section>
+
     <!-- Routing -->
     <script src="js/donateMoney.js"></script>
     <script src="js/routing.js"></script>

@@ -1,5 +1,5 @@
 /** @format */
-
+// Routings are added
 document.getElementById("donate").addEventListener("click", function () {
   showSectionById("donation");
 });

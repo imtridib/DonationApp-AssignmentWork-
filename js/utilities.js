@@ -7,7 +7,7 @@ function getInputFieldValueById(id) {
 
   return inputNumber;
 }
-
+// Text Value from input value
 function getTextFieldValueById(id) {
   const textValue = document.getElementById(id).innerText;
   const textNumber = parseFloat(textValue);

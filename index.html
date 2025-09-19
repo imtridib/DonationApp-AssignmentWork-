@@ -1,0 +1,302 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html data-theme="light"></html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="sticky top-0 z-50">
+      <div>
+        <div
+          class="navbar bg-blue-100 flex flex-col items-center sm:flex-row sm:justify-between"
+        >
+          <!-- Navbar Start -->
+          <div
+            class="navbar-start flex justify-center w-full sm:w-auto sm:pl-5 md:pl-10 mb-4 sm:mb-0"
+          >
+            <button
+              id="blog"
+              class="px-6 sm:px-8 py-2 sm:py-3 bg-blue-500 text-white font-medium rounded-lg shadow-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none transition-transform transform active:scale-95"
+            >
+              Blog
+            </button>
+            <button
+              id="home"
+              class="hidden sm:px-8 py-2 sm:py-3 bg-blue-500 text-white font-medium rounded-lg shadow-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none transition-transform transform active:scale-95"
+            >
+              Home
+            </button>
+          </div>
+          <!-- Navbar Center -->
+          <div
+            class="navbar-center flex justify-center gap-2 items-center w-full sm:w-auto mb-4 sm:mb-0"
+          >
+            <img
+              class="h-10 w-10 sm:h-auto sm:w-auto mb-2 sm:mb-0"
+              src="images/logo.png"
+              alt="logo image"
+            />
+            <a class="text-lg sm:text-xl font-semibold text-center"
+              >Donate Bangladesh</a
+            >
+          </div>
+          <!-- Navbar End -->
+          <div
+            class="navbar-end flex flex-col place-items-end w-full sm:w-auto sm:pr-5"
+          >
+            <div class="flex">
+              <img
+                class="h-6 w-6 sm:h-auto sm:w-auto mr-2"
+                src="images/coin.png"
+                alt="coin image"
+              />
+              <p id="accountBalance" class="text-lg sm:text-xl font-medium">
+                9400
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Donation and History Buttons -->
+        <div
+          id="functionalKey"
+          class="pt-6 pb-6 flex justify-center gap-3 items-center bg-gray-500 bg-opacity-25 backdrop-blur-md"
+        >
+          <button
+            id="donate"
+            class="px-8 py-3 bg-slate-300 text-black hover:text-white font-medium rounded-lg shadow-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none transition-transform transform active:scale-95"
+          >
+            Donation
+          </button>
+          <button
+            id="donate-history"
+            class="px-8 py-3 bg-blue-500 text-white font-medium rounded-lg shadow-md  hover:text-black  hover:bg-slate-300 active:bg-slate-300 focus:outline-none transition-transform transform active:scale-95"
+          >
+            History
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- Donation section -->
+    <section id="donation" class="flex flex-col gap-6 mb-10 mt-6">
+      <div class="flex justify-center">
+        <div class="hero rounded-lg max-w-5xl bg-base-200 min-h-60">
+          <div class="hero-content p-4 flex-col lg:flex-row lg:p-0">
+            <img
+              src="images/noakhali.png"
+              class="max-w-full sm:max-w-sm rounded-lg shadow-2xl"
+            />
+            <div
+              class="flex flex-col items-center justify-center lg:items-start lg:justify-start text-center lg:text-left w-full lg:w-auto mx-auto"
+            >
+              <div
+                class="w-36 gap-3 py-2 px-2 flex flex-row bg-white text-black font-medium rounded-lg shadow-md hover:bg-white-600 focus:outline-none"
+              >
+                <img src="images/coin.png" alt="coin" />
+                <!-- For Noakhali Donation -->
+                <div id="donateMoneyNoakhaliFlood">1400</div>
+                <a>Blog</a>
+              </div>
+              <h1 class="pt-4 text-3xl sm:text-3xl font-bold">
+                Donate for Flood Relief in Noakhali, Bangladesh
+              </h1>
+              <p class="py-2 text-sm sm:text-sm">
+                The recent floods in Noakhali have devastated local communities,
+                leading to severe disruption and loss. Your generous donation
+                will help provide immediate aid, including food, clean water,
+                and medical supplies, to those affected by this calamity.
+              </p>
+              <div
+                class="flex flex-col items-center lg:items-start w-full gap-2"
+              >
+                <input
+                  id="donateNoakhali"
+                  class="w-full lg:w-80 h-10 bg-blue-200 px-2 rounded-md"
+                  type="text"
+                  placeholder="Your Amount"
+                />
+                <button
+                  id="btnMoney-Noakhali"
+                  class="btn w-full lg:w-80 btn-primary"
+                >
+                  <p class="text-lg pb-1">Donate</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="hero rounded-lg max-w-5xl bg-base-200 min-h-60">
+          <div class="hero-content p-4 flex-col lg:flex-row lg:p-0">
+            <img
+              src="images/feni.png"
+              class="max-w-full sm:max-w-sm rounded-lg shadow-2xl"
+            />
+            <div
+              class="flex flex-col items-center justify-center lg:items-start lg:justify-start text-center lg:text-left w-full lg:w-auto mx-auto"
+            >
+              <div
+                class="w-36 gap-3 py-2 px-2 flex flex-row bg-white text-black font-medium rounded-lg shadow-md hover:bg-white-600 focus:outline-none"
+              >
+                <img src="images/coin.png" alt="coin" />
+                <!-- For Feni Donation -->
+                <p id="donateMoneyFeniFlood">1400</p>
+                <a>Blog</a>
+              </div>
+              <h1 class="pt-4 text-3xl sm:text-3xl font-bold">
+                Donate for Flood Relief in Feni, Bangladesh
+              </h1>
+              <p class="py-2 text-sm sm:text-sm">
+                The recent floods in Feni have devastated local communities,
+                leading to severe disruption and loss. Your generous donation
+                will help provide immediate aid, including food, clean water,
+                and medical supplies, to those affected by this calamity.
+              </p>
+              <div
+                class="flex flex-col items-center lg:items-start w-full gap-2"
+              >
+                <input
+                  id="donateFeni"
+                  class="w-full lg:w-80 h-10 bg-blue-200 px-2 rounded-md"
+                  type="text"
+                  placeholder="Your Amount"
+                />
+                <button
+                  id="btnMoney-Feni"
+                  class="btn w-full lg:w-80 btn-primary"
+                >
+                  <p class="text-lg pb-1">Donate</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="hero rounded-lg max-w-5xl bg-base-200 min-h-60">
+          <div class="hero-content p-4 flex-col lg:flex-row lg:p-0">
+            <img
+              src="images/quota-protest.png"
+              class="max-w-full sm:max-w-sm rounded-lg shadow-2xl"
+            />
+            <div
+              class="flex flex-col items-center justify-center lg:items-start lg:justify-start text-center lg:text-left w-full lg:w-auto mx-auto"
+            >
+              <div
+                class="w-36 gap-3 py-2 px-2 flex flex-row bg-white text-black font-medium rounded-lg shadow-md hover:bg-white-600 focus:outline-none"
+              >
+                <img src="images/coin.png" alt="coin" />
+                <!-- For Quota Donation -->
+                <!-- Code -->
+                <p id="donationForQuota">1400</p>
+                <a>Blog</a>
+              </div>
+              <h1 class="pt-4 text-3xl sm:text-3xl font-bold">
+                Donate for Quota, Bangladesh
+              </h1>
+              <p class="py-2 text-sm sm:text-sm">
+                The recent Quota protest devastated local communities,
+                leading to severe disruption and loss. Your generous donation
+                will help provide immediate aid, including food, clean water,
+                and medical supplies, to those affected by this calamity.
+              </p>
+              <div
+                class="flex flex-col items-center lg:items-start w-full gap-2"
+              >
+                <!-- Donate Quota Placeholder -->
+                <input
+                  id="donateQuota"
+                  class="w-full lg:w-80 h-10 bg-blue-200 px-2 rounded-md"
+                  type="text"
+                  placeholder="Your Amount"
+                />
+                <button
+                  id="btnMoney-Quota"
+                  class="btn w-full lg:w-80 btn-primary"
+                >
+                  <p class="text-lg pb-1">Donate</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Donation Section End -->
+
+    <!-- Donation History -->
+     <!-- Here are the history parts -->
+    <div id="donation-history" class="hidden">
+      <h2 class="text-3xl text-center">Transaction History</h2>
+      <div id="transaction-container" class="space-y-3"></div>
+    </div>
+    <!-- blog page starting -->
+    <!-- Blog page comments -->
+    <section
+      id="blog-post"
+      class="pt-24 flex flex-col items-center justify-center w-full"
+    >
+      <div
+        class="collapse mb-1 px-2 w-full max-w-7xl collapse-arrow bg-base-200"
+      >
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div
+        class="collapse mb-1 px-2 w-full max-w-7xl collapse-arrow bg-base-200"
+      >
+      <!-- blogs -->
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div
+        class="collapse mb-1 px-2 w-full max-w-7xl collapse-arrow bg-base-200"
+      >
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <!-- Inside blogs -->
+          <p>hello</p>
+        </div>
+      </div>
+      <div
+        class="collapse mb-1 px-2 w-full max-w-7xl collapse-arrow bg-base-200"
+      >
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Routing -->
+    <script src="js/donateMoney.js"></script>
+    <script src="js/routing.js"></script>
+    <script src="js/utilities.js"></script>
+  </body>
+</html>
